@@ -16,7 +16,7 @@ header {
     grid-template-rows: 20px auto 152px;
     grid-template-columns: 28px auto auto 28px;
     color: #222222;
-    font-family: roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 60px;
     background-color: #3DE07E;
     height: 608px;
@@ -66,23 +66,82 @@ header h1 {
 .card {
     width: 312px;
     margin-top: 104px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .card img {
     max-width: 100%;
 }
 
+.card h2 {
+    font-size: 34px;
+}
+
+.card p {
+    margin-top: 0;
+}
+
 .big-card {
+    background-color: white;
     margin-top: 104px;
     width: 484px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+    color: #222222;
+
 }
 
 .big-card img {
     max-width: 100%;
 }
 
+.big-card h2 {
+    font-size: 34px;
+}
+
+.big-card p {
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+
 figure {
     margin: 0;
     padding: 0;
     max-width: 100%;
+}
+
+.big-card section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.button {
+    background-color: #E83F57;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+    justify-self: end;
+    margin-top: auto;
+    width: 50%;
+    height: 30px;
+    font-size: 12px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.big-card .button {
+    padding: 16px 24px;
+    height: 50px;
+    font-size: 14px;
 }
