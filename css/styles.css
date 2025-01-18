@@ -15,7 +15,7 @@ header {
     display: grid;
     grid-template-rows: 20px auto 152px;
     grid-template-columns: 28px auto auto 28px;
-    color: black;
+    color: #222222;
     font-family: roboto, sans-serif;
     font-size: 60px;
     background-color: #3DE07E;
@@ -53,4 +53,36 @@ header h1 {
     align-self: center;
     justify-self: center;
     text-wrap: nowrap;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 312px;
+    margin-top: 104px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.big-card {
+    margin-top: 104px;
+    width: 484px;
+}
+
+.big-card img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
